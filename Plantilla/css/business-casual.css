@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Business Casual v5.0.9 (https://startbootstrap.com/template-overviews/business-casual)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 
@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  padding-top: 1em;
 }
 
 h1,
@@ -76,6 +77,10 @@ p {
 
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   font-family: 'Raleway';
 }
 
