@@ -6,11 +6,10 @@
 
 body {
   font-family: 'Lora';
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+  background-image: url("../img/comida.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  padding-top: 1em;
 }
 
 h1,
@@ -76,11 +75,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  background-color: rgba(34, 139, 34, 0.9);
   font-family: 'Raleway';
 }
 
@@ -107,6 +102,14 @@ p {
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #e6a756;
   }
+}
+
+#mainNav .user {
+  width: 10%;
+  height: 5%;
+  color: white;
+  text-align: center;
+  background: red;
 }
 
 .btn-xl {
@@ -230,7 +233,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(34, 139, 34, 0.9);
 }
 
 .text-primary {
