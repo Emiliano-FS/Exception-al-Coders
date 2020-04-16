@@ -150,6 +150,14 @@ p {
   }
 }
 
+#reg-link {
+  margin-top: 1rem;
+}
+
+label {
+  cursor: pointer;
+}
+
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -161,6 +169,7 @@ p {
   padding: 3rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
+  z-index: 1;
 }
 
 .cta .cta-inner:before {
@@ -172,6 +181,7 @@ p {
   left: -0.5rem;
   right: -0.5rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
