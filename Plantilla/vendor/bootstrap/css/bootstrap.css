@@ -10035,4 +10035,27 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.titulo-pedido{
+  text-align: center;
+}
+
+.lista-pedidos{
+  font-size: xx-large;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+}
+
+.pedido{
+  margin-left: 8%;
+  margin-top: 5%;
+  color: #FBF042;
+  width: 90%;
+  height: 40%;
+  text-align: center;
+  background: #E6A756;
+  font-size: x-large;
+}
+
+
 /*# sourceMappingURL=bootstrap.css.map */

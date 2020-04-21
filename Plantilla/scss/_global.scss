@@ -64,3 +64,11 @@ p {
 .bg-faded {
   background-color: fade-out($white, 0.15);
 }
+
+
+.lista-pedidos{
+  height: 500px;
+  width: 500px;
+  background: blue;
+  font-family: 'Work Sans', sans-serif;
+}
