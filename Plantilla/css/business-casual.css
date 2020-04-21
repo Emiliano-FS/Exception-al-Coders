@@ -183,6 +183,14 @@ p {
   }
 }
 
+#reg-link {
+  margin-top: 1rem;
+}
+
+label {
+  cursor: pointer;
+}
+
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
