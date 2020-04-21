@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,18 +34,20 @@
           </a>
         </li>
         <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="agregarcategoria.html">Crear Categorias</a>
+          <a class="nav-link text-uppercase text-expanded" href="about.html">Crear Categorias</a>
         </li>
         <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="agregarcomida.html">Crear Comida</a>
+          <a class="nav-link text-uppercase text-expanded" href="products.html">Crear Comida</a>
         </li>
         <li class="nav-item px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="store.html">Menú</a>
         </li>
       </ul>
     </div>
-    <div class="user">
-      <button type="button" name="button">Salir</button>
+    <div class="intro">
+      <div class="intro-button mx-auto">
+        <a class=" btn btn-primary btn-xl" href="#">Salir</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -55,20 +56,30 @@
 
 <body>
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">La comida en un solo lugar </span>
-    <span class="site-heading-lower">Iphonda</span>
-
-
-
+    <span class="site-heading-upper text-primary mb-3">Agrega una nueva Categoria !! </span>
   </h1>
 
   <!-- Navigation -->
+  <div class="page-section cta">
+    <div class="container">
+      <div class="cta-inner text-center rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper"> -Categoria- </span>
+        </h2>
+        <form action="." method="POST">
+          <label for="nombre">Nombre:</label><br>
+          <input name="nombre" type="text"><br>
+          <label for="descripcion">Descripcion:</label><br>
+          <input name="descripcion" type="text"><br>
+        </form>
+        <div class="intro">
+          <div class="intro-button mx-auto mt-2" >
+            <button type="button" class=" btn btn-primary btn-xl">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
 
 </html>
