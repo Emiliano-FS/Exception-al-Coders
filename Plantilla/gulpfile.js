@@ -1,5 +1,4 @@
 "use strict";
-
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
