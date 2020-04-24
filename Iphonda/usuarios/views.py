@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from .forms import SignUpForm
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm,User
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .models import *
+
 from django.template import loader
 from django.http import HttpResponse
 
@@ -44,12 +46,15 @@ class Pedidos(View):
     """docstring forPedidos."""
 
     def get(self,request):
+        template="pedidos.html"
         lista_pedidos = Orden.objects.all()
+        lista_usuarios=User.objects.all()
         context = {
             'lista_pedidos':lista_pedidos,
+            'listaUsuario': lista_usuarios,
         }
         print(lista_pedidos)
-        return render(request,"pedidos.html",context)
+        return render(request,self.template,context)
 
     def post(self, request):
         return HttpResponse("<h1> no debiste llegar aqui </h1>")

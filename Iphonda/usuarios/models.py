@@ -4,8 +4,9 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Orden(models.Model):
     """docstring forOrden."""
-    id     = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     # id_usuario  = models.ForeignKey('User.username', on_delete = models.PROTECT)
+    #usuario_orden=models.ForeignKey("User", on_delete = models.PROTECT)    
     comida = models.ForeignKey('comida.Comida', on_delete = models.PROTECT)
     fecha  = models.DateField()
     total  = models.DecimalField(max_digits = 9, decimal_places = 2)
