@@ -3,7 +3,7 @@ from django.views import View
 from .forms import SignUpForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
-from .models import Orden
+from .models import *
 from django.template import loader
 from django.http import HttpResponse
 
@@ -44,13 +44,12 @@ class Pedidos(View):
     """docstring forPedidos."""
 
     def get(self,request):
-        #template = loader.get_template("usuario/pedidos.html")
         lista_pedidos = Orden.objects.all()
         context = {
             'lista_pedidos':lista_pedidos,
         }
-
-        return render(request,"usuarios/templates/pedidos.html",context)
+        print(lista_pedidos)
+        return render(request,"pedidos.html",context)
 
     def post(self, request):
         return HttpResponse("<h1> no debiste llegar aqui </h1>")

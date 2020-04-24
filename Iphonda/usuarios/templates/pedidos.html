@@ -1,7 +1,6 @@
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
-
-
+    {% load static %}
     <head>
       <meta charset="utf-8">
       <title>Pedidos</title>
@@ -12,7 +11,7 @@
       {% if lista_pedidos %}
       <ul>
         {% for pedido in lista_pedidos %}
-        <li> <a href="/IPHONDA/{{pedido.id}}">{{pedido.email}} </a></li>
+        <li> <a href="/IPHONDA/{{pedido.id}}"></a>{{pedido.email}} </a></li>
         {% endfor %}
       </ul>
       {%else%}
