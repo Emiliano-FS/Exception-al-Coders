@@ -48,13 +48,13 @@ class Pedidos(View):
     def get(self,request):
         template="pedidos.html"
         lista_pedidos = Orden.objects.all()
-        lista_usuarios=User.objects.all()
+        #lista_usuarios=User.objects.all()
         context = {
             'lista_pedidos':lista_pedidos,
-            'listaUsuario': lista_usuarios,
+            #'listaUsuario': lista_usuarios,
         }
         print(lista_pedidos)
-        return render(request,self.template,context)
+        return render(request,template,context)
 
     def post(self, request):
         return HttpResponse("<h1> no debiste llegar aqui </h1>")
