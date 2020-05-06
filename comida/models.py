@@ -22,8 +22,8 @@ class Categoria(models.Model):
     imagen      = models.ImageField(upload_to = 'categoria/static/images')
 
     def save(self, *args, **kwargs):
-        if not self.id:
-            self.slug = slugify(self.nombre)
+        
+        self.slug = slugify(self.nombre)
 
         super(Categoria, self).save(*args, **kwargs)
 
